@@ -1,0 +1,23 @@
+Traceback (most recent call last):
+  File "D:\workspace\eclipse\python\tune-reporting-python-master\examples\ncsoft_advertiser_report_actuals.py", line 83, in <module>
+    main()
+  File "D:\workspace\eclipse\python\tune-reporting-python-master\examples\ncsoft_advertiser_report_actuals.py", line 80, in main
+    find_failure()
+  File "D:\workspace\eclipse\python\tune-reporting-python-master\examples\ncsoft_advertiser_report_actuals.py", line 67, in find_failure
+    map_params
+  File "D:\workspace\eclipse\python\tune-reporting-python-master\tune_reporting\base\endpoints\advertiser_report_actuals_base.py", line 190, in find
+    map_params["fields"] = self.fields(TUNE_FIELDS_DEFAULT)
+  File "D:\workspace\eclipse\python\tune-reporting-python-master\tune_reporting\base\endpoints\endpoint_base.py", line 265, in fields
+    self.__endpoint_fields()
+  File "D:\workspace\eclipse\python\tune-reporting-python-master\tune_reporting\base\endpoints\endpoint_base.py", line 368, in __endpoint_fields
+    client.call()
+  File "D:\workspace\eclipse\python\tune-reporting-python-master\tune_reporting\base\service\tune_service_client.py", line 183, in call
+    ex
+tune_reporting.helpers.sdk_exception.TuneSdkException: Failed to execute client request (
+api_url_endpoint_base:	 https://api.mobileapptracking.com
+api_url_version:	 v2
+controller:	 apidoc
+action:	 get_controllers
+auth_type:	 api_key
+auth_key:	 08d8957a05d0aa705a91cc4472809745
+url:	 https://api.mobileapptracking.com/v2/apidoc/get_controllers?sdk=tune-reporting-python&ver=1.1.1&api_key=08d8957a05d0aa705a91cc4472809745&controllers=advertiser%2Fstats&details=modelName%2Cfields): (HTTPError: (Error:HTTP Error 404: Not Found, Url:https://api.mobileapptracking.com/v2/apidoc/get_controllers?sdk=tune-reporting-python&ver=1.1.1&api_key=08d8957a05d0aa705a91cc4472809745&controllers=advertiser%2Fstats&details=modelName%2Cfields))
